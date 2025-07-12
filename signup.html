@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Emirati Arabic Tutoring</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles specific to the signup page for consistency */
+        .signup-container {
+            max-width: 450px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .signup-form input,
+        .signup-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+            background-color: #f9f9f9;
+        }
+
+        .signup-form .cta-button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .signup-links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .signup-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Emarati Arabic</a>
+            </div>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html" class="cta-button">Student Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="signup-container">
+            <h2>Create Your Account</h2>
+            <p>Join us and start your Emirati Arabic journey!</p>
+            <form class="signup-form" action="payment.html" method="post">
+                <!-- 
+                    NOTE: The 'action' attribute should point to a payment processing page or script.
+                    For this template, it redirects to a conceptual 'payment.html' page.
+                -->
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Create Password" required>
+                
+                <label for="package" style="display: block; text-align: left; margin-bottom: 5px; font-weight: bold;">Choose Your Package:</label>
+                <select id="package" name="package" required>
+                    <option value="" disabled selected>Select a package...</option>
+                    <option value="basic">Basic Package ($99)</option>
+                    <option value="premium">Premium Package ($199)</option>
+                    <option value="vip">VIP Package ($349)</option>
+                </select>
+
+                <button type="submit" class="cta-button">Proceed to Payment</button>
+            </form>
+            <div class="signup-links">
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact me at: your.email@example.com</p>
+        </div>
+    </footer>
+</body>
+</html>
